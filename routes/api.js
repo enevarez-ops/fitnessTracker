@@ -20,7 +20,7 @@ router.put("/api/workouts/:id", (req, res) => {
     })
 });
 
-router.get("/api/workouts", (req, res) => {
+router.get("/api/workouts/range", (req, res) => {
     Workout.aggregate([
         { 
             $addFields:{
